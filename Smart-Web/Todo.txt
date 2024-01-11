@@ -1,0 +1,7 @@
+✅1.The first thing when displaying all the products 'Back is not working'
+✅2.When displaying one product + - working if you click the number it throws an exception
+✅3.And it should ask permission like are sure to create the order
+4.And Show all users orders
+5.Admin panel
+6.Admin table in database
+https://api.telegram.org/bot6470639945:AAE-jgG91xsJFM69NjM-HBvjppKwEsLT06A/setWebhook?url=https://a99b-84-54-75-249.ngrok-free.app/

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smart-Web", "Smart-Web\Smart-Web.csproj", "{BD2C3923-EE64-4B06-B8F8-9093A3FD099B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smart-Domain", "Smart-Domain\Smart-Domain.csproj", "{FF3E54AB-7F28-44FA-8B20-21DE58FB810C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smart.Data", "Smart.Data\Smart.Data.csproj", "{61D27429-AD15-456E-ABE9-AE15E1217892}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD2C3923-EE64-4B06-B8F8-9093A3FD099B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD2C3923-EE64-4B06-B8F8-9093A3FD099B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD2C3923-EE64-4B06-B8F8-9093A3FD099B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD2C3923-EE64-4B06-B8F8-9093A3FD099B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF3E54AB-7F28-44FA-8B20-21DE58FB810C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF3E54AB-7F28-44FA-8B20-21DE58FB810C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF3E54AB-7F28-44FA-8B20-21DE58FB810C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF3E54AB-7F28-44FA-8B20-21DE58FB810C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61D27429-AD15-456E-ABE9-AE15E1217892}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61D27429-AD15-456E-ABE9-AE15E1217892}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61D27429-AD15-456E-ABE9-AE15E1217892}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61D27429-AD15-456E-ABE9-AE15E1217892}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

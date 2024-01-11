@@ -1,0 +1,1146 @@
+[
+  {
+    "ProductId": "1",
+    "ProductType": "Biznes-lunch",
+    "ProductName": "Biznes-lunch № 1",
+    "ProductDescription": "Tanlash uchun birinchi taom: yasmiq qaymoqli sho'rva 1/2 porsiya yoki Merzhimek Ezo Gelin Çorbasi 1/2 porsiya.Ikkinchi taom: Ekmek turk nonli pishloqli tovuq kotletlari.Ichimlik: Berry limonadi 0,4 l.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "1.jpg"
+    },
+    "ProductCapacity": "1/2",
+    "ProductPrice": 60000.0,
+    "ProductIngredient": ""
+  },
+  {
+    "ProductId": "2",
+    "ProductType": "Biznes-lunch",
+    "ProductName": "Biznes-lunch № 2",
+    "ProductDescription": "Birinchi taom: tovuq sho'rva 1/2 porsiya.Siz tanlagan ikkinchi taom: izgara kofto yoki turk noni Ekmek bilan mol go'shti shish kabobi.Ichimlik: limonli choy.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "2.jpg"
+    },
+    "ProductCapacity": "1/2",
+    "ProductPrice": 65000.0,
+    "ProductIngredient": ""
+  },
+  {
+    "ProductId": "3",
+    "ProductType": "Biznes-lunch",
+    "ProductName": "Biznes-lunch № 3",
+    "ProductDescription": "Asosiy taom: sabzavotli baliq, 1/2 porsiya turk yassi Ekmek bilan.Tanlash uchun salat: yunon 1/2 qismi yoki yangi 1/2 qismi.Ichimlik: limonli choy.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "3.jpg"
+    },
+    "ProductCapacity": "1/2",
+    "ProductPrice": 68000.0,
+    "ProductIngredient": ""
+  },
+  {
+    "ProductId": "4",
+    "ProductType": "Kombo",
+    "ProductName": "Kombo № 1",
+    "ProductDescription": "Rich and healthy, this set includes a delicious fish sandwich, a revitalizing arugula salad and your choice of an Americano or aromatic lemon tea. Enjoy the harmony of flavors and energy that this perfect combination brings.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "4.jpg"
+    },
+    "ProductCapacity": "",
+    "ProductPrice": 70000.0,
+    "ProductIngredient": "fish sandwich, salad with arugula 0.5 and a drink of your choice: Americano or tea with lemon"
+  },
+  {
+    "ProductId": "5",
+    "ProductType": "Kombo",
+    "ProductName": "Kombo № 2",
+    "ProductDescription": "Biz sizga 2-sonli kombinatni taqdim etamiz - ta'm va qulaylikni qadrlaydiganlar uchun ideal echim. Bu to`plamga qishloq kartoshkalari, pishloq nuggetlari va muammosiz dam olish uchun Heinz pishloq sousi kiradi. Bunga engil va tetiklantiruvchi berry limonadini qo'shing va siz xohlagan joyda o'zingiz bilan olib ketishingiz mumkin bo'lgan to'liq zavqga ega bo'lasiz. Bizning Combo # 2 bilan xavotirlanmasdan har qanday vaziyatda ajoyib ta'mga ega bo'ling.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "5.jpg"
+    },
+    "ProductCapacity": "",
+    "ProductPrice": 69000.0,
+    "ProductIngredient": "qishloq kartoshkasi, pishloqli nuggetlar, Heinz pishloq sousi, berry limonadi 0,4 l."
+  },
+  {
+"ProductId": "6",
+    "ProductType": "Kombo",
+    "ProductName": "Kombo № 3",
+    "ProductDescription": "Ushbu to'plam soddalik va ajoyib ta'mni qadrlaydiganlar uchun ideal. Chizburger, kartoshka va tetiklantiruvchi Coca-Coladan rohatlaning. Bu shahar ritmida yashaydigan va har bir daqiqani qadrlaydiganlar uchun amaliy va foydali echimdir. Tez, mazali, qulay - 3-sonli kombinat harakatdagi haqiqiy gurmeler uchun yaratilgan!",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "6.jpg"
+    },
+    "ProductCapacity": "",
+    "ProductPrice": 45000.0,
+    "ProductIngredient": "mayda cheeseburger, kartoshka fri, Cola 0,5 l"
+  },
+  {
+    "ProductId": "7",
+    "ProductType": "Kombo",
+    "ProductName": "Kombo № 4",
+    "ProductDescription": "To'liq ovqatdan bahramand bo'ling, jumladan, suvli tovuq sendvichi, kartoshka va tetiklantiruvchi Coca-Cola. Bu boy va tez tushlik uchun ajoyib kombinatsiya.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "7.jpg"
+    },
+    "ProductCapacity": "",
+    "ProductPrice": 53000.0,
+    "ProductIngredient": "tovuqli sendvich, kartoshka kartoshkasi, Coca-Cola 0,5 l."
+  },
+  {
+    "ProductId": "8",
+    "ProductType": "Kombo",
+    "ProductName": "Kombo № 5",
+    "ProductDescription": "Ushbu to'plamga mazali tovuq klubi sendvichi kiradi. U Heinz pishloq sousi va tetiklantiruvchi Coca-Cola bilan to'ldirilgan. Kombo ? 5 - bu shunchaki ovqat emas, balki kayfiyat. Qulay formatda lazzatlarning ulug'vorligidan bahramand bo'ling!",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "8.jpg"
+    },
+    "ProductCapacity": "",
+    "ProductPrice": 45000.0,
+    "ProductIngredient": "tovuqli klub sendvichi, Heinz pishloq sousi, Coca-Cola 0,5 l."
+  },
+  {
+    "ProductId": "9",
+    "ProductType": "Baliqli taom",
+    "ProductName": "Baliq sabzavotlar bilan(bitta porsiya)",
+    "ProductDescription": "Nafis taom bo?lib, lahm skumbriya go?shti va barra sabzavotlar, tamatli sous \"Tam-Tam\" bilan beriladi",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "9.jpg"
+    },
+    "ProductCapacity": "270 gr",
+    "ProductPrice": 80000.0,
+    "ProductIngredient": "Lahm skumbriya go?shti, pomidor, guruch, aysberg, piyoz, limon, Tam-Tam sousi."
+  },
+  {
+    "ProductId": "10",
+    "ProductType": "Baliqli taom",
+    "ProductName": "Sendvich Baliqli",
+    "ProductDescription": "Baliqli sendvich - bu ta'mdan bahramand bo?lsangiz, sizga sog?lig?ingizga g?amxo?rlik qilish imkonini beradigan oqsil, hayotga zarur bo?lgan omega-3 yog?i bordir. Undan tashqari tarkibi vitaminlarga boydir.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "10.jpg"
+    },
+    "ProductCapacity": "250 gr.",
+    "ProductPrice": 40000.0,
+    "ProductIngredient": "Lahm skumbriya go?shti, chiabatta non, pomidor, piyoz, aysberg, limon sousi, Tam-Tam sousi, mayonez."
+  },
+  {
+    "ProductId": "11",
+    "ProductType": "Baliqli taom",
+    "ProductName": "Baliq sabzavotlar bilan (0,5 porsiya)",
+    "ProductDescription": "Nafis taom bo?lib, lahm skumbriya go?shti va barra sabzavotlar, tamatli sous \"Tam-Tam\" bilan beriladi",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "11.jpg"
+    },
+    "ProductCapacity": "170 gr",
+    "ProductPrice": 40000.0,
+    "ProductIngredient": "Lahm skumbriya go?shti, pomidor, guruch, aysberg, piyoz, limon, Tam-Tam sousi."
+  },
+  {
+    "ProductId": "12",
+    "ProductType": "Baliqli taom",
+    "ProductName": "Sendvich baliqli (duble)",
+    "ProductDescription": "Baliqli sendvich - bu ta'mdan bahramand bo?lsangiz, sizga sog?lig?ingizga g?amxo?rlik qilish imkonini beradigan oqsil, hayotga zarur bo?lgan omega-3 yog?i bordir. Undan tashqari tarkibi vitaminlarga boydir.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "12.jpg"
+    },
+    "ProductCapacity": "350 gr.",
+    "ProductPrice": 80000.0,
+    "ProductIngredient": "Lahm skumbriya go?shti ikki porsiya, chiabatta non, pomidor, piyoz, aysberg, limon sousi, Tam-Tam sousi, mayonez."
+  },
+  {
+    "ProductId": "13",
+    "ProductType": "Baliqli taom",
+    "ProductName": "Sendvich Baliqli rukkola bilan",
+    "ProductDescription": "Baliqli sendvich rukkula bilan- sog?lom ovqatlanishni yaxshi ko?radiganlar uchun ideal tanlovdir. Nafis barra baliq bo?lakchalari, oltin tusga kirgunga qadar qovurilgan bo?lib, rukkula bo?yi bilan birlashib har bir baliq bo?lakchasiga o?zgacha ta'm beradi.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "13.jpg"
+    },
+    "ProductCapacity": "270 gr.",
+    "ProductPrice": 45000.0,
+    "ProductIngredient": "Lahm skumbriya go?shti, chiabatta non, rukkola, piyoz, pomidor, limon, Tam-Tam sousi."
+  },
+  {
+    "ProductId": "14",
+    "ProductType": "Baliqli taom",
+    "ProductName": "Lavash baliqi",
+    "ProductDescription": "Ichi juda shirali, tashqarisida sabzavot, skumbriya va Tam-Tam sousi qo'shilgan.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "14.jpg"
+    },
+    "ProductCapacity": "250 gr.",
+    "ProductPrice": 40000.0,
+    "ProductIngredient": "pomidor, piyoz, skumbriya lahm go'shti, limon sousi, Tam-Tam sousi, mayonez."
+  },
+  {
+    "ProductId": "15",
+    "ProductType": "Donarlar",
+    "ProductName": "Donar sendvich mol go'shti",
+    "ProductDescription": "Go'sht katta aylanadigan shishlarda pishiriladi, so'ngra u yupqa plastina shaklida kesiladi, bo'laklarga bo'linadi va ko'katlar va sabzavotlar bilan birga non ustiga qo'yiladi.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "15.jpg"
+    },
+    "ProductCapacity": "350 gr.",
+    "ProductPrice": 48000.0,
+    "ProductIngredient": "bulochka, mol go?shti, aysberg, pomidor, Iskander sousi, piyoz,xalapen."
+  },
+  {
+    "ProductId": "16",
+    "ProductType": "Donarlar",
+    "ProductName": "Donar sendvich tovuq",
+    "ProductDescription": "Go'sht katta aylanadigan shishlarda pishiriladi, so'ngra u yupqa plastina shaklida kesiladi, bo'laklarga bo'linadi va ko'katlar va sabzavotlar bilan birga non ustiga qo'yiladi.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "16.jpg"
+    },
+    "ProductCapacity": "350 gr.",
+    "ProductPrice": 40000.0,
+    "ProductIngredient": "bulochka, mol go?shti, aysberg, pomidor, Iskander sousi, piyoz,xalapen."
+  },
+  {
+    "ProductId": "17",
+    "ProductType": "Donarlar",
+    "ProductName": "Donar mol gushtli",
+    "ProductDescription": "Donar durum mol go'shti -  ziravorlar, souslar va barra sabzavotli salat qo'shilgan aylanma shishlarda pishirilgan go'sht bilan to'ldirilgan lavash taomidir.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "17.jpg"
+    },
+    "ProductCapacity": "310 gr.",
+    "ProductPrice": 43000.0,
+    "ProductIngredient": "lavash, mol go'shti, aysberg, piyoz, iskandar sousi, pomidor, xalapen."
+  },
+  {
+    "ProductId": "18",
+    "ProductType": "Donarlar",
+    "ProductName": "Donar durum tovuql",
+    "ProductDescription": "Danar durum tovuqli -  ziravorlar, souslar va barra sabzavotli salatlarda  shishda pishirilgan go'sht bilan to'ldirilgan lavash hamiriga o'ralib beriladigan taomidir.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "18.jpg"
+    },
+    "ProductCapacity": "310 gr.",
+    "ProductPrice": 34000.0,
+    "ProductIngredient": "lavash, tovuq, aysberg, piyoz, iskandar sousi, pomidor, jalapeno."
+  },
+  {
+    "ProductId": "19",
+    "ProductType": "Donarlar",
+    "ProductName": "Donar mol go'shti (tarelkada)",
+    "ProductDescription": "Go'sht, guruch va kartoshka ziravorlar  bilan birga, bu kombinatsiyani unutilmas ta'mga aylantiradi.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "19.jpg"
+    },
+    "ProductCapacity": "350 gr.",
+    "ProductPrice": 65000.0,
+    "ProductIngredient": "lavash, mol go'shti, aysberg, piyoz, fransuz kartoshkasi, pomidor, guruch."
+  },
+  {
+    "ProductId": "20",
+    "ProductType": "Donarlar",
+    "ProductName": "Donar tovuq .jpg(Tarelkada)",
+    "ProductDescription": "Tovuq go'sht, guruch va kartoshka ziravorlar  bilan birga, bu kombinatsiyani unutilmas ta'mga aylantiradi.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "20.jpg"
+    },
+    "ProductCapacity": "350 gr.",
+    "ProductPrice": 50000.0,
+    "ProductIngredient": "lavash, tovuq go'shti, aysberg, piyoz, fransuz kartoshkasi, pomidor, guruch."
+  },
+  {
+    "ProductId": "21",
+    "ProductType": "Donarlar",
+    "ProductName": "Iskandar (mol go'shti)",
+    "ProductDescription": "Iskandar go'shtning yumshoqligi va ziravorlar xushbo'yligini o'zida mujassam etgan boy ta'm va hidga ega. Sariyog'da qovurilgan, ustiga suzma va eritilgan sariyog '(\"tel' qayma\" deb ataladi)  taomga qaymoqli tuzilish va yumshoqlik qo'shish uchun xizmat qiladi.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "21.jpg"
+    },
+    "ProductCapacity": "550 gr.",
+    "ProductPrice": 76000.0,
+    "ProductIngredient": "mol go'shti, suzma, Iskandar sousi, qotirilgan non, dungan qalampiri, eritilgan sariyog '."
+  },
+  {
+    "ProductId": "22",
+    "ProductType": "Donarlar",
+    "ProductName": "Iskandar (tovuq)",
+    "ProductDescription": "Iskandar tovuq go'shtning yumshoqligi va ziravorlar xushbo'yligini o'zida mujassam etgan boy ta'm va hidga ega. Sariyog'da qovurilgan, ustiga suzma va eritilgan sariyog '(\"tel' qayma\" deb ataladi)  taomga qaymoqli tuzilish va yumshoqlik qo'shish uchun xizmat qiladi.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "22.jpg"
+    },
+    "ProductCapacity": "550 gr.",
+    "ProductPrice": 65000.0,
+    "ProductIngredient": "tovuq go'shti, suzma, Iskandar sousi, qotirilgan non, dungan qalampiri, eritilgan sariyog'."
+  },
+  {
+    "ProductId": "23",
+    "ProductType": "Kaboblar",
+    "ProductName": "Shashlik (mol go'shti)",
+    "ProductDescription": "Bizning mol go'shtidan kabobimiz - og'izingizda ertib ketadigan bo'lib pishadi. Har bir mol go'shtining yuqori sifati va nozikligi sizning taomingizni unutilmas qiladi.Biz kaboblarimiz uchun eng barra va eng tabiiy masaliqlarni tanlashga alohida e'tibor beramiz. Bizning oshpazimiz sizga eng yaxshi oshpazlik tajribasini taqdim etish uchun faqat eng yaxshi go'sht bo'laklarini tanlaydi.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "23.jpg"
+    },
+    "ProductCapacity": "380 gr.",
+    "ProductPrice": 60000.0,
+    "ProductIngredient": "mol go'shti, piyoz, mavsumiy sabzavotlar, guruch."
+  },
+  {
+    "ProductId": "24",
+    "ProductType": "Kaboblar",
+    "ProductName": "Shashlik (qoy go'shti)",
+    "ProductDescription": "Bizning qoy go'shtidan tayyorlangan kabob barchaga haqiqiy ta'mni biluvchilar uchun  gastronomik taomdir. Sizga haqiqiy oshpazlik mahoratini taklif qilish uchun, biz faqat eng yumshoq va shirali qoy go'shtidan foydalanamiz.Har bir go`sht bo`lagi o`zining tabiiy seli va o`ziga xos ta'mini saqlab qolish uchun professional tarzda qayta ishlanadi. Biz qoy go'shtini yumshoq va aromatik tuzilishga ega bo'lgan maxsus sousda ehtiyotkorlik bilan marinadlaymiz.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "24.jpg"
+    },
+    "ProductCapacity": "380 gr.",
+    "ProductPrice": 70000.0,
+    "ProductIngredient": "qoy go'shti. piyoz, mavsumiy sabzavotlar, guruch."
+  },
+  {
+    "ProductId": "25",
+    "ProductType": "Kaboblar",
+    "ProductName": "Shashlik (tovuq)",
+    "ProductDescription": "Guruch va yangi tug'ralgan sabzavotlar xushbo'y tovuq bilan tortiladi. Bu tovuqning ta'mini mukammal tarzda keltirib chiqaradigan va uyg'un kombinatsiya???. Bu taom o'zining ta'mi va sifati bilan sizni xursand qilishi aniq.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "25.jpg"
+    },
+    "ProductCapacity": "350 gr.",
+    "ProductPrice": 45000.0,
+    "ProductIngredient": "tovuq (son), piyoz, mavsumiy sabzavotlar, guruch."
+  },
+  {
+    "ProductId": "26",
+    "ProductType": "Kaboblar",
+    "ProductName": "Tovuq qanotlari",
+    "ProductDescription": "Tovuq qanotidan kabob bo'lib - tovuq go'shtining  shishlarida pishirilgan mazali va mashhur taomdir. Qanotlar shiraliligi va nozikligi tufayli shashlik uchun ajoyib tanlovdir.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "26.jpg"
+    },
+    "ProductCapacity": "Kaboblar",
+    "ProductPrice": 55000.0,
+    "ProductIngredient": "tovuq qanotlari. piyoz, mavsumiy sabzavotlar, guruch."
+  },
+  {
+    "ProductId": "27",
+    "ProductType": "Kaboblar",
+    "ProductName": "Urfa",
+    "ProductDescription": "Bizning ajoyib taomimiz - Urfa kabobi bilan sharqoniy oshxona an'analariga sho`ng`ing. Bu maxsus retsept bo'yicha pishirilgan shirali va xushbo'y go'shtdan sizni energiya va zavq bilan to'ldiradigan taomdir.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "27.jpg"
+    },
+    "ProductCapacity": "360 gr.",
+    "ProductPrice": 60000.0,
+    "ProductIngredient": "mol go'shti, qoy goshti, piyoz, mavsumiy sabzavotlar, guruch."
+  },
+  {
+    "ProductId": "28",
+    "ProductType": "Kaboblar",
+    "ProductName": "Adana Kebab",
+    "ProductDescription": "Adana -  ziravorlar va shirali go'shtning ajoyib kombinatsiyasi bilan mashhur bo'lgan mazali va xushbo'y turk taomidir. Bu kabobning bir turi bo'lib, o'z nomini Turkiyaning janubiy qismida joylashgan Adana shahridan olingan, bu taomni milliy g'ururdir dep tan olishgan.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "28.jpg"
+    },
+    "ProductCapacity": "380 gr.",
+    "ProductPrice": 60000.0,
+    "ProductIngredient": "mol go'shti, qo'y go'shti. piyoz, mavsumiy sabzavotlar, guruch."
+  },
+  {
+    "ProductId": "29",
+    "ProductType": "Kaboblar",
+    "ProductName": "Perzola ko`y goshtidan",
+    "ProductDescription": "Qoy go'shti qovurg'asidan kabob - qo'y go'shtidan tayyorlangan nafis taom, ya'ni bel - qovurg'ali go'sht bo'lagi. Qoy go'shtidan tayyorlangan kabob uzoq vaqtdan beri an'anaviy Kavkaz va Markaziy Osiyo oshxonalarida mashhur taomlardan biri bo'lib kelgan.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "29.jpg"
+    },
+    "ProductCapacity": "450 gr.",
+    "ProductPrice": 11000.0,
+    "ProductIngredient": "qoy go'shti (qovurg'a), piyoz, mavsumiy sabzavotlar, guruch."
+  },
+  {
+    "ProductId": "30",
+    "ProductType": "Kaboblar",
+    "ProductName": "Tovuqli perzola",
+    "ProductDescription": "Guruch va yangi tug'ralgan sabzavotlar va xushbo'y tovuq bilan tortiladi. Bu tovuqning ta'mini mukammal tarzda keltirib chiqaradigan va uyg'unlik yaratadigan mukammal kombinatsiyadir. Bu taom o'zining ta'mi va sifati bilan sizni xursand qilishi aniq.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "30.jpg"
+    },
+    "ProductCapacity": "400 gr.",
+    "ProductPrice": 70000.0,
+    "ProductIngredient": "tovuq (son), piyoz, mavsumiy sabzavotlar, guruch."
+  },
+  {
+    "ProductId": "31",
+    "ProductType": "Kaboblar",
+    "ProductName": "kebab chop-cic",
+    "ProductDescription": "Chop shish kabobi - bu mazali va shirali go'shtni his etuvchilar uchun ayni muddiodir. Yumshoq va shirali go'sht bilan kombinatsiyasi uni ideal tanlovga aylantiradi.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "31.jpg"
+    },
+    "ProductCapacity": "380 gr.",
+    "ProductPrice": 70000.0,
+    "ProductIngredient": "mol go'shti, dumba, piyoz, mavsumiy sabzavotlar, guruch."
+  },
+  {
+    "ProductId": "32",
+    "ProductType": "Kaboblar",
+    "ProductName": "Sarma Beyti",
+    "ProductDescription": "Bizning asl taomimiz - sarma beyti bilan ta'mingizni jonlantiring. Bu o'zining boy ta'mi va masaliqlarni noyob kombinatsiyasi bilan sizni hayratda qoldiradigan haqiqiy sharqoniy taomdir. Hoziroq sarma beytiga buyurtma bering va sharqona didlar olamiga sho'ng'ing!",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "32.jpg"
+    },
+    "ProductCapacity": "550 gr.",
+    "ProductPrice": 75000.0,
+    "ProductIngredient": "mol go'shti, qoy go'shti. mavsumiy sabzavotlar, lavash, suzma, tamatli sous."
+  },
+  {
+    "ProductId": "33",
+    "ProductType": "Kaboblar",
+    "ProductName": "izgara kofte",
+    "ProductDescription": "Izgara kofte - turk oshxonasining taomi bo'lib, u ziravorlar va ko'katlar qo'shilgan plitada pishirilgan qiyma go'shtdan iborat. Izgara \"grill\" degan ma'noni anglatadi, kofte esa qiyma go'sht.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "33.jpg"
+    },
+    "ProductCapacity": "400 gr.",
+    "ProductPrice": 50000.0,
+    "ProductIngredient": "mol go'shti, qo'y go'shti, piyoz, mavsumiy sabzavotlar, guruch."
+  },
+  {
+    "ProductId": "34",
+    "ProductType": "Kotletlar",
+    "ProductName": "Tovuq garnir bilan",
+    "ProductDescription": "Shirali tovuq bo'laklari, xushbo'y guruch va yangi tug'ralgan sabzavotlardan iborat boy va mazali taomdir. Ushbu taom tog'ri va muvozanatli ovqatlanishni qidiradiganlar uchun ideal tanlovdir. Turk yopilgan noni \"Ekmek\" bilan beriladi.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "34.jpg"
+    },
+    "ProductCapacity": "350 gr.",
+    "ProductPrice": 42000.0,
+    "ProductIngredient": "aysberg, pomidor, bodring, guruch, tovuq filesi, Yekmek yassi non."
+  },
+  {
+    "ProductId": "35",
+    "ProductType": "Kotletlar",
+    "ProductName": "Tovuq kotletlari (pishloq bilan)",
+    "ProductDescription": "Pishloqli tovuq kotletlari - bu ayni sizga kerak bo'lgan taomdir! Ichida qaymoqli pishloq, shirali va mayin tovuq kotletlari birinchi tishlashdayoq qalbingizni zabt etadi. Har bir porsiyada xushbo'y guruch va yangi tug'ralgan sabzavotlar bilan beriladi.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "35.jpg"
+    },
+    "ProductCapacity": "350 gr.",
+    "ProductPrice": 38000.0,
+    "ProductIngredient": "pomidor, bodring, guruch, pishloqli tovuq kotletlari, Ekmek yopilgan noni."
+  },
+  {
+    "ProductId": "36",
+    "ProductType": "Kotletlar",
+    "ProductName": "Turk noni \"Ekmek\"",
+    "ProductDescription": "Ekmek turk noni- Bu Turkiyaning mazali va ajoyib non bo`lib, o`zining betakror ta'mi va ko'rinishi bilan sizni o`ziga rom etishi aniq.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "36.jpg"
+    },
+    "ProductCapacity": "60 gr.",
+    "ProductPrice": 4000.0,
+    "ProductIngredient": ""
+  },
+  {
+    "ProductId": "37",
+    "ProductType": "Burgerlar",
+    "ProductName": "Gamburger",
+    "ProductDescription": "Gamburger - bu xushbo'y ziravorlar, yangi bulochka va turli xil qo'shimchalar bilan kombinatsiyasi bo'lib, o'ziga xos ta'mni yaratadi.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "37.jpg"
+    },
+    "ProductCapacity": "220 gr.",
+    "ProductPrice": 23000.0,
+    "ProductIngredient": "aysberg, bulochka, tuzlangan bodring, go'shtli kotlet, pomidor, mayonez."
+  },
+  {
+    "ProductId": "38",
+    "ProductType": "Burgerlar",
+    "ProductName": "Katta gamburger",
+    "ProductDescription": "Gamburger - bu xushbo'y ziravorlar, yangi bulochka va turli xil qo'shimchalar bilan kombinatsiyasi bo'lib, o'ziga xos ta'mni yaratadi.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "38.jpg"
+    },
+    "ProductCapacity": "300 gr.",
+    "ProductPrice": 31000.0,
+    "ProductIngredient": "aysberg, bulochka, tuzlangan bodring, go'shtli kotlet, pomidor, mayonez."
+  },
+  {
+    "ProductId": "39",
+    "ProductType": "Burgerlar",
+    "ProductName": "Chizburger kichik",
+    "ProductDescription": "Chizburger shirali burgerlarni sevuvchilar uchun mukammal tanlovdir. Yangi pomidor, tuzlangan bodring va xushbo'y mayonez, shuningdek, maydalangan aysberg barglari bilan yumshoq bulochka, eriydigan pishloqning klassik juftligidan rohatlaning.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "39.jpg"
+    },
+    "ProductCapacity": "240 gr.",
+    "ProductPrice": 26000.0,
+    "ProductIngredient": "aysberg, bulochka, tuzlangan bodring, go'shtli kotlet, pishloq, pomidor, mayonez."
+  },
+  {
+    "ProductId": "40",
+    "ProductType": "Burgerlar",
+    "ProductName": "chizburger katta",
+    "ProductDescription": "Chizburger shirali burgerlarni sevuvchilar uchun mukammal tanlovdir. Yangi pomidor, tuzlangan bodring va xushbo'y mayonez, shuningdek, maydalangan aysberg barglari bilan yumshoq bulochka, eriydigan pishloqning klassik juftligidan rohatlaning.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "40.jpg"
+    },
+    "ProductCapacity": "300 gr.",
+    "ProductPrice": 34000.0,
+    "ProductIngredient": "aysberg, bulochka, tuzlangan bodring, go'shtli kotlet, pishloq, pomidor, mayonez."
+  },
+  {
+    "ProductId": "41",
+    "ProductType": "Burgerlar",
+    "ProductName": "Gamburger tovuqli",
+    "ProductDescription": "Tovuqli burger - bu shirali va ishtahani ochuvchi taom bo'lib, tovuqni sevuvchilarni albatta xursand qiladi. Ushbu gamburger bir necha qatlamlardan iborat bo'lib, ularning har biri o'ziga xos ta'mga ega.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "41.jpg"
+    },
+    "ProductCapacity": "220 gr.",
+    "ProductPrice": 19000.0,
+    "ProductIngredient": "aysberg, bulochka, tuzlangan bodring, tovuq kotleti, pomidor, mayonez."
+  },
+  {
+    "ProductId": "42",
+    "ProductType": "Burgerlar",
+    "ProductName": "Gamburger tovuqli Kotta",
+    "ProductDescription": "Tovuqli burger - bu shirali va ishtahani ochuvchi taom bo'lib, tovuqni sevuvchilarni albatta xursand qiladi. Ushbu gamburger bir necha qatlamlardan iborat bo'lib, ularning har biri o'ziga xos ta'mga ega.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "42.jpg"
+    },
+    "ProductCapacity": "300 gr.",
+    "ProductPrice": 26000.0,
+    "ProductIngredient": "aysberg, bulochka, tuzlangan bodring, tovuq kotleti, pomidor, mayonez."
+  },
+  {
+    "ProductId": "43",
+    "ProductType": "Burgerlar",
+    "ProductName": "Chizburger tovuqli",
+    "ProductDescription": "Chizburger tovuqli - yumshoq tovuqli kotleta, pishloq, yangi sabzavotlar va mayin mayonezni birlashtirgan mazali taomdir. Bu shirali va mazali burger tovuq sevuvchilarni xursand qilishi aniq.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "43.jpg"
+    },
+    "ProductCapacity": "240 gr.",
+    "ProductPrice": 23000.0,
+    "ProductIngredient": "aysberg, bulochka, tuzlangan bodring, tovuq kotleti, pishloq, pomidor, mayonez."
+  },
+  {
+    "ProductId": "44",
+    "ProductType": "Burgerlar",
+    "ProductName": "Chizburger tovuqli katta",
+    "ProductDescription": "Chizburger tovuqli - yumshoq tovuqli kotleta, pishloq, yangi sabzavotlar va mayin mayonezni birlashtirgan mazali taomdir. Bu shirali va mazali burger tovuq sevuvchilarni xursand qilishi aniq.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "43.jpg"
+    },
+    "ProductCapacity": "330 gr.",
+    "ProductPrice": 29000.0,
+    "ProductIngredient": "aysberg, bulochka, tuzlangan bodring, tovuq kotleti, pishloq, pomidor, mayonez."
+  },
+  {
+    "ProductId": "45",
+    "ProductType": "Gazaklar va garnirlar",
+    "ProductName": "Kartoshkali dumaloqchalar",
+    "ProductDescription": "Bizning kartoshkali dumaloqchalar sizni nozik, shirali kartoshka lazzatlari dunyosiga olib boradigan ajoyib gazakdir. Ularning tashqi qarsildoq va ichki yumshoq qismi sizning e'tiboringizni darhol o'ziga jalb qiladi.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "44.jpg"
+    },
+    "ProductCapacity": "100 gr.",
+    "ProductPrice": 18000.0,
+    "ProductIngredient": ""
+  },
+  {
+    "ProductId": "46",
+    "ProductType": "Gazaklar va garnirlar",
+    "ProductName": "Tovuqli nagets",
+    "ProductDescription": "Mazali, qovurilgan, tovuq go'shtidan nagets ajoyib gazak yoki do'stlar va oila a'zolari bilan kechki dam olish uchun ajoyib taomdir.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "45.jpg"
+    },
+    "ProductCapacity": "150 gr.",
+    "ProductPrice": 30000.0,
+    "ProductIngredient": ""
+  },
+  {
+    "ProductId": "47",
+    "ProductType": "Gazaklar va garnirlar",
+    "ProductName": "??????? ??????? ? ?????",
+    "ProductDescription": "Mazali, qovurilgan, tovuq go'shtidan nagets ajoyib gazak yoki do'stlar va oila a'zolari bilan kechki dam olish uchun ajoyib taomdir.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "46.jpg"
+    },
+    "ProductCapacity": "150 gr.",
+    "ProductPrice": 35000.0,
+    "ProductIngredient": ""
+  },
+  {
+    "ProductId": "48",
+    "ProductType": "Gazaklar va garnirlar",
+    "ProductName": "??????? ??????? ? ?????",
+    "ProductDescription": "Mazali, qovurilgan, tovuq go'shtidan nagets ajoyib gazak yoki do'stlar va oila a'zolari bilan kechki dam olish uchun ajoyib taomdir.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "47.jpg"
+    },
+    "ProductCapacity": "150 gr.",
+    "ProductPrice": 35000.0,
+    "ProductIngredient": ""
+  },
+  {
+    "ProductId": "49",
+    "ProductType": "Gazaklar va garnirlar",
+    "ProductName": "Piyezli Teshkulcha",
+    "ProductDescription": "Bu taom do'stlar bilan piknik uchun ayni muddiodir, yaqinlar bilan oilaviy tushlikdir, hamda unitilmas vaqtichog'lik bilan birga bo'ladi. Bu hamma taom bilan billa qoshimcha bo'la oladi.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "48.jpg"
+    },
+    "ProductCapacity": "",
+    "ProductPrice": 25000.0,
+    "ProductIngredient": ""
+  },
+  {
+    "ProductId": "50",
+    "ProductType": "Gazaklar va garnirlar",
+    "ProductName": "Fri",
+    "ProductDescription": "Qarsildoq va sho'rtang kartoshka fri",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "49.jpg"
+    },
+    "ProductCapacity": "100 gr.",
+    "ProductPrice": 18000.0,
+    "ProductIngredient": ""
+  },
+  {
+    "ProductId": "51",
+    "ProductType": "Gazaklar va garnirlar",
+    "ProductName": "Kartoshka derevenskiy",
+    "ProductDescription": "Kartoshka derevenskiy - Bu haqiyqiy klasikadir,siz unitilmas maza bilan bahramand bo'lishingiz mumkun. Ichi yumshoq va usti esa qizarguncha qovulilgan bo'lib lekin yumshoqligi saqlab qoladi.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "50"
+    },
+    "ProductCapacity": "100g",
+    "ProductPrice": 18000.0,
+    "ProductIngredient": ""
+  },
+  {
+    "ProductId": "52",
+    "ProductType": "Gazaklar va garnirlar",
+    "ProductName": "Guruch",
+    "ProductDescription": "Makkajo'xori bilan guruch.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "51"
+    },
+    "ProductCapacity": "200 gr.",
+    "ProductPrice": 12000.0,
+    "ProductIngredient": ""
+  },
+  {
+    "ProductId": "53",
+    "ProductType": "Gazaklar va garnirlar",
+    "ProductName": "Xolodes",
+    "ProductDescription": "Bu to'yimli taom qaynatilgan go'shtdan va ziravorlar va sabzavotlardan tayyorlanadi, so'ngra jele holatiga qadar sovutiladi. Bu dunyoning ko'plab oshxonalarida an'anaviy taom bo'lib, bayram dasturxonining ajralmas qismi hisoblanadi.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "52"
+    },
+    "ProductCapacity": "300 gr.",
+    "ProductPrice": 40000.0,
+    "ProductIngredient": "mol go'shti, sabzi, ko'katlar, ziravorlar."
+  },
+  {
+    "ProductId": "54",
+    "ProductType": "Pitsa",
+    "ProductName": "Pitsa \"Margarita\"",
+    "ProductDescription": "Pitsa \"Margarita\"  bu klassik taomni afzal ko'radiganlar uchun  ajoyib tanlovdir. Biz kafolat beramiz, pitsa margaritani har bir bo'lagida siz hushbo'ylik va quvonch keltiradi.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "53"
+    },
+    "ProductCapacity": "650 gr.Hajmi: 30 sm.",
+    "ProductPrice": 59000.0,
+    "ProductIngredient": "hamir, pishloq, tamat sousi, pomidor."
+  },
+  {
+    "ProductId": "55",
+    "ProductType": "Pitsa",
+    "ProductName": "Pitsa Iskandar tovuqli",
+    "ProductDescription": "Bizning tovuqli pitssalar nozik hamirdan tayyorlanadi, shunda yumshoq asosning mukammal kombinatsiyasini kafolatlaydi. Pitsani mukammal kombinatsiyasini yaratish uchun biz suvli pomidorli sous va har xil turdagi pishloqlardan foydalanamiz.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "54"
+    },
+    "ProductCapacity": "650 gr.Hajmi: 30 sm.",
+    "ProductPrice": 80000.0,
+    "ProductIngredient": "tamat  sousi, tovuq go'shti, qo'ziqorin, bulg'or qalampiri, yupqa xamir, pishloq, pomidor."
+  },
+  {
+    "ProductId": "56",  
+    "ProductType": "Pitsa",
+    "ProductName": "Pitsa Pepperoni",
+    "ProductDescription": "Pepperoni pizza hech qachon uslubdan tashqariga chiqmaydigan klassik va sevimli taomdir. Bizning Pepperoni pizzamiz - bu yupqa, tiniq qobiq, og'izni sug'oradigan pishgan pomidor sousi va mazali pepperoni ta'mining ajoyib kombinatsiyasi.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "55"
+    },
+    "ProductCapacity": "600 gr.Hajmi: 30 sm.",
+    "ProductPrice": 70000.0,
+    "ProductIngredient": "tomat sousi, yupqa xamir, piperoni."
+  },
+  {
+    "ProductId": "57",
+    "ProductType": "Pitsa",
+    "ProductName": "Pitsa Iskandar go'shti",
+    "ProductDescription": "Qaysi taomni sevishingizdan qat'i nazar, go'shtli pizza ko'plab go'shtni sevuvchilar uchun taomdir. Bizning go'shtli pitsalarimiz ishtahangizni qondirish va go'shtning haqiqiy ta'mini berish uchun to'g'ridan-to'g'ri eshigingizga yangi va issiq yetkazib beriladi.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "56"
+    },
+    "ProductCapacity": "650 gr.Hajmi: 30 sm.",
+    "ProductPrice": 90000.0,
+    "ProductIngredient": "tamat sousi, mol go'shti, qo'ziqorin, bulg'or qalampiri, yupqa xamir, zaytun, pomidor, pishloq."
+  },
+  {
+    "ProductId": "58",
+    "ProductType": "Pitsa",
+    "ProductName": "Pitsa kalbasa bilan",
+    "ProductDescription": "Bizning kolbasa bilan pitsa go'shtli taomlarni va boy ta'mni sevuvchilar uchun mukammal tanlovdir. Biz har bir bo`lak pitsani haqiqiy taomga aylantirish uchun faqat eng yangi, eng sifatli kolbasadan foydalanamiz.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "57"
+    },
+    "ProductCapacity": "600 gr.",
+    "ProductPrice": 73000.0,
+    "ProductIngredient": "tomat sousi, 3 xil kolbasa, yupqa xamir, makkajo'xori, pishloq, qo'ziqorin."
+  },
+  {
+    "ProductId": "59",
+    "ProductType": "Pitsa",
+    "ProductName": "Pitas qo'ziqorinli",
+    "ProductDescription": "Bizning qo'ziqorinli pizzamiz vbarra va xushbo'y qo'ziqorinlarni sevuvchilar uchun mukammal tanlovdir. Biz faqat yangi qo'ziqorinlardan foydalanamiz, shunda har bir bo'lak pitsa ta'mga boy va o'ziga xos hid yaratadi.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "58"
+    },
+    "ProductCapacity": "tomat sousi, shampignon qo'ziqorinlari, bolgar qalampiri, yupqa xamir, zaytun, pishloq, pomidor.",
+    "ProductPrice": 70000.0,
+    "ProductIngredient": "tomat sousi, shampignon qo'ziqorinlari, bolgar qalampiri, yupqa xamir, zaytun, pishloq, pomidor."
+  },
+  {
+    "ProductId": "60",
+    "ProductType": "Pide",
+    "ProductName": "Pide go'sht va pishloqli",
+    "ProductDescription": "Go'sht va pishloqli pide hushboylikka boydir. Shirali go'sht, ziravorlar va xushbo'y pishloq, go'sht, taomni sevuvchilarni xushnud etadigan uyg'un kombinatsiyani yaratadi.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "59.jpg"
+    },
+    "ProductCapacity": "450 gr.",
+    "ProductPrice": 60000.0,
+    "ProductIngredient": "xamir, pomidor, bolgar qalampiri, pomidor sousi, mol go'shti, pishloq."
+  },
+  {
+    "ProductId": "61",
+    "ProductType": "Pide",
+    "ProductName": "Go'shtli pide",
+    "ProductDescription": "Go'shtli pide - barra bo'lak go'shti bilan to'ldirilgan hayratlanarli darajada shirali yassi non. Har bir bulak sharqona lazzat simfoniyasidan rohatlaning.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "60.jpg"
+    },
+    "ProductCapacity": "400 gr.",
+    "ProductPrice": 55000.0,
+    "ProductIngredient": "xamir, pomidor, bolgar qalampiri, pomidor sousi, mol go'shti."
+  },
+  {
+    "ProductId": "62",
+    "ProductType": "Pide",
+    "ProductName": "Kovurmali pide",
+    "ProductDescription": "Kovurmali pide - bu turk oshxonasining boyi va ta'mini ifodalovchi nafis va xushbo'y an'anaviy turk taomidir. Pide - bu sirti toqg'ri chetlari esa qayrilib pishirlgan nondir , kovurma esa pishirish usuli bo'lib, yupqa hamir goshtini ustiga orladi.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "61.jpg"
+    },
+    "ProductCapacity": "450 gr.",
+    "ProductPrice": 65000.0,
+    "ProductIngredient": "Xamir, pishloq, mol go'shti."
+  },
+  {
+    "ProductId": "63",
+    "ProductType": "Pide",
+    "ProductName": "Pishloq va asal bilan pide",
+    "ProductDescription": "Sevgi bilan tayyorlangan har bir pide tilda eriydigan pishloqning boy ta'mini asal bilan birlashtiradi va bu taomga o'ziga xos joziba bag'ishlaydi. Pishloq va asal qo'shilgan har bir pide bo'lagi haqiqiy gastronomik zavqdir.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "62.jpg"
+    },
+    "ProductCapacity": "450 gr.",
+    "ProductPrice": 65000.0,
+    "ProductIngredient": "xamir, pishloq, asal, hamdon pista."
+  },
+  {
+    "ProductId": "64",
+    "ProductType": "Pide",
+    "ProductName": "Assorti  pide",
+    "ProductDescription": "Pide assorti uch xil turdagi pideni o'z ichiga oladi: go'sht, pishloq va qiyma. Marinadlangan mol go'shti bo'laklaridan iboradir. Maydalangan mozzarella pishloqni o'z ichiga oladi. Piyoz, turli ziravorlar va o'tlar qo'shilgan mayda tug'ralgan mol go'shtidan tayyorlanadi. Tayyorlagandan so'ng, u pide yuzasiga teng ravishda taqsimlanadi.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "63.jpg"
+    },
+    "ProductCapacity": "450 gr.",
+    "ProductPrice": 65000.0,
+    "ProductIngredient": ""
+  },
+  {
+    "ProductId": "65",
+    "ProductType": "Pide",
+    "ProductName": "Qiyma bilan pide",
+    "ProductDescription": "Har bir pide bo'lagi yumshoq xamir va ziravorlar va o'tlar bilan to'ldirilgan va qiyma go'shtdan iborat. Lazzatlarning uyg'unligiga go'shtning achchiqligi va xamirning nozikligi mohirona kombinatsiyasi orqali erishiladi.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "64.jpg"
+    },
+    "ProductCapacity": "400 gr.",
+    "ProductPrice": 50000.0,
+    "ProductIngredient": ""
+  },
+  {
+    "ProductId": "66",
+    "ProductType": "Pide",
+    "ProductName": "Pishloqli pide",
+    "ProductDescription": "Nozik xamir va erituvchi pishloq - pishloqli pide pishloqli taomlarni sevuvchilar uchun mazali taomdir.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "65.jpg"
+    },
+    "ProductCapacity": "350 gr.",
+    "ProductPrice": 45000.0,
+    "ProductIngredient": ""
+  },
+  {
+    "ProductId": "67",
+    "ProductType": "Pide",
+    "ProductName": "Lahmadjun",
+    "ProductDescription": "Lahmajun - bu arman milatiga mansub taom bo'lib pitsa shaliga o'hshab ketadi. Lahmajunning asosiy tarkibi yupqa xamir bo`lib, uning ustiga qiyma va sabzavotlar solinadi.Laxmojunning o`ziga xos xususiyati shirali qiymaning xushbo`y sabzavot va ziravorlar bilan qo`shilishidir. Taom nozik xamiri tufayli o'tkir ta'mga va chiroyli tuzilishga ega.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "66.jpg"
+    },
+    "ProductCapacity": "300 gr.",
+    "ProductPrice": 30000.0,
+    "ProductIngredient": ""
+  },
+  {
+    "ProductId": "68",
+    "ProductType": "Sendvich va lavashlar",
+    "ProductName": "Pishloq bilan lavash tovuq",
+    "ProductDescription": "Yumshoq tovuq filesi, qaymoqli pishloq, yangi sabzavotlar va Tam-Tam pomidor sousi bilan ajoyib juftlikdir. Sizning ta'mingizni o'ziga tortadigan mazali va to'yimli taomdir.",
+    "Media": {
+      "Exist": false,
+      "ImageUrl": null
+    },
+    "ProductCapacity": "350 gr.",
+    "ProductPrice": 39000.0,
+    "ProductIngredient": "tovuq filesi, pishloq, bodring, pomidor, lavash, mayonez, Tam-Tam sousi."
+  },
+  {
+    "ProductId": "69",
+    "ProductType": "Sendvich va lavashlar",
+    "ProductName": "Klab sendvich tovuqli",
+    "ProductDescription": "Engil tushlik uchun ajoyib tanlov bo'lgan mazali Klab sendvichni kashf eting. Bu taom mazali ta'mni sevuchilar uchundir.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "67.jpg"
+    },
+    "ProductCapacity": "350 gr.",
+    "ProductPrice": 38000.0,
+    "ProductIngredient": "aysberg, pomidor, bodring, toster noni, tovuq lahmi, pishloq, mayonez, kartoshka fri, Tam-Tam sousi."
+  },
+  {
+    "ProductId": "70",
+    "ProductType": "Sendvich va lavashlar",
+    "ProductName": "Sendvich tovuqli",
+    "ProductDescription": "Tovuqli sendvich barra ingredientlar va nozik tovuq go'shtining ajoyib kombinatsiyasi bo'lib, hatto eng nozik ta'm egalarini ham mamnun etadi.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "68.jpg"
+    },
+    "ProductCapacity": "300 gr.",
+    "ProductPrice": 35000.0,
+    "ProductIngredient": "aysberg, ciabatta noni, pomidor, bodring, tovuq filesi, mayonez."
+  },
+  {
+    "ProductId": "71",
+    "ProductType": "Sendvich va lavashlar",
+    "ProductName": "Klab sendvich (dudlangan kurkali)",
+    "ProductDescription": "Bizning klab sendvichi tushlik yoki engil kechki ovqat uchun ajoyib tanlovdir. Nafis ta'mdan bahramand bo'lib va ishtahangizni mamnun qilish imkonini bering. O'zingini mazali taomlar dunyosida his eting va bizning klab sendvichdan barhamand bo'ling",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "69.jpg"
+    },
+    "ProductCapacity": "400 gr.",
+    "ProductPrice": 40000.0,
+    "ProductIngredient": "aysberg, tostr noni, pomidor, bodring, dudlangan kurka, pishloq, mayonez, Tam-Tam sousi, fri kartoshkasi."
+  },
+  {
+    "ProductId": "72",
+    "ProductType": "Sendvich va lavashlar",
+    "ProductName": "Lavash tovuqli",
+    "ProductDescription": "Ichi juda shirali, tashqarisi esa qarsildor, qovurilgan tovuq bo'laklari va bizning sous Tam-Tam.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "70.jpg"
+    },
+    "ProductCapacity": "350 gr.",
+    "ProductPrice": 35000.0,
+    "ProductIngredient": " pomidor, bodring, lavash, tovuq filesi, Tam-Tam sousi, mayonez."
+  },
+  {
+    "ProductId": "73",
+    "ProductType": "Sendvich va lavashlar",
+    "ProductName": "klab sendvich (Vegetarian)",
+    "ProductDescription": "Vegetarian Club Sandwich - go'shtdan hola bo'lib go'shtsiz klab sendvichni hush ko'radiganlar uchun. Siz vegetarian bo'lasizmi yoki shunchaki sog'lom, muvozanatli hilma hilik afzal ko'rasizmi, bu sendvich hatto eng nozik ta'mni ham mamnun qiladi.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "71.jpg"
+    },
+    "ProductCapacity": "350 gr.",
+    "ProductPrice": 27000.0,
+    "ProductIngredient": "aysberg, pomidor, bodring, toster noni, pishloq, mayonez, kartoshka fre, Tam-Tam sousi."
+  },
+  {
+    "ProductId": "74",
+    "ProductType": "Hot doglar",
+    "ProductName": "Hot-dog",
+    "ProductDescription": "Frantsuz baget, qovurilgan sosiska va suvli sabzavotlar. Ajoyib non ushta yoki mazali tushlikdir.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "72.jpg"
+    },
+    "ProductCapacity": "210 gr.",
+    "ProductPrice": 16000.0,
+    "ProductIngredient": "aysberg, pomidor, bodring, kolbasa, tuzlangan sabzi, ketchup, mayonez."
+  },
+  {
+    "ProductId": "75",
+    "ProductType": "Hot doglar",
+    "ProductName": "hot dog Pishloqli",
+    "ProductDescription": "Frantsuz baget, qovurilgan sosiska va suvli sabzavotlar. Ajoyib non ushta yoki mazali tushlikdir.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "73.jpg"
+    },
+    "ProductCapacity": "225 gr.",
+    "ProductPrice": 20000.0,
+    "ProductIngredient": "aysberg, pomidor, bodring, kolbasa, tuzlangan sabzi, ketchup, mayonez, pishloq."
+  },
+  {
+    "ProductId": "76",
+    "ProductType": "Hot doglar",
+    "ProductName": "Hot-dog korolevskiy",
+    "ProductDescription": "Katta frantsuz baget, qovurilgan sosiska va suvli sabzavotlar.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "74.jpg"
+    },
+    "ProductCapacity": "300 gr.",
+    "ProductPrice": 26000.0,
+    "ProductIngredient": "aysberg marul, pomidor, bodring, ikkita kolbasa, tuzlangan sabzi, ketchup, mayonez."
+  },
+  {
+    "ProductId": "77",
+    "ProductType": "Hot doglar",
+    "ProductName": "Hot-dog korolevskiy Pishloqli",
+    "ProductDescription": "Mazali kanadalik sosiska va 2 tilim pishloq bilan ajoyib tarzda tayyorlangan katta hot-dog",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "75.jpg"
+    },
+    "ProductCapacity": " 330 gr.",
+    "ProductPrice": 34000.0,
+    "ProductIngredient": "aysberg , pomidor, bodring, ikkita sosiska, tuzlangan sabzi, ketchup, mayonez, pishloq."
+  },
+  {
+    "ProductId": "78",
+    "ProductType": "Hot doglar",
+    "ProductName": "Hot-dog korolevskiy  Pishloqli (mini)",
+    "ProductDescription": "Frantsuz baget, qovurilgan sosiska va suvli sabzavotlar.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "76.jpg"
+    },
+    "ProductCapacity": "260 gr.",
+    "ProductPrice": 29000.0,
+    "ProductIngredient": "aysberg, pomidor, bodring, ikkita sosiska, tuzlangan sabzi, ketchup, mayonez, pishloq."
+  },
+  {
+    "ProductId": "79",
+    "ProductType": "Hot doglar",
+    "ProductName": "potato",
+    "ProductDescription": "Frantsuz bageti, sabzavotlar, mayonez va kartoshka fri - hammasi shirali va juda to'yimlidir.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "77.jpg"
+    },
+    "ProductCapacity": "aysberg, pomidor, bodring, kartoshka fri, tuzlangan bodring, mayonez.",
+    "ProductPrice": 20000.0,
+    "ProductIngredient": "aysberg, pomidor, bodring, kartoshka fri, tuzlangan bodring, mayonez."
+  },
+  {
+    "ProductId": "80",
+    "ProductType": "Hot doglar",
+    "ProductName": "Potato sosiska bilan",
+    "ProductDescription": "Frantsuz bageti, sabzavotlar, sosiska (ikta bilan ham buladi), mayonez va kartoshka fri - bularning barchasi suvli va juda to'yimlidir.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "78.jpg"
+    },
+    "ProductCapacity": "340 gr.",
+    "ProductPrice": 28000.0,
+    "ProductIngredient": "aysberg, pomidor, bodring, kartoshka fri, tuzlangan bodring, mayonez, sosiska."
+  },
+  {
+    "ProductId": "81",
+    "ProductType": "Hot doglar",
+    "ProductName": "Vegetariancha",
+    "ProductDescription": "Vegan hot-dog klassik hot-dogga go'shtsiz oddiy bo'lgan mazali va sog'lom taomdir. Bu vegetarian afzal ko'rgan va shunchaki sog'lom mahsulotlarni afzal ko'rganlar uchun mukammal tanlovdir.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "79.jpg"
+    },
+    "ProductCapacity": "270 gr.",
+    "ProductPrice": 18000.0,
+    "ProductIngredient": "pishloq, pomidor, tuzlangan bodring, ketchup, mayonez, aysberg, marinadlangan sabzi."
+  },
+  {
+    "ProductId": "82",
+    "ProductType": "Sho'rvalar",
+    "ProductName": "Qovoqli sho'rva",
+    "ProductDescription": "Qovoqli qaymoqli sho'rva - Bu mazali taom bo'lib, sizni kuz fasli muhitiga chorlaydi . Bizning qovoqli sho'rva - bu noziklik va mazali ta'mni o'zida mujassam etgan haqiqiy pazandalik san'atidir. Quritilgan non bilan beriladi.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "80.jpg"
+    },
+    "ProductCapacity": "450 ml.",
+    "ProductPrice": 25000.0,
+    "ProductIngredient": " piyoz, sabzi, nok, qovoq, tamat sousi, ziravorlar."
+  },
+  {
+    "ProductId": "83",
+    "ProductType": "Sho'rvalar",
+    "ProductName": "Qo'ziqorin kremli sho'rva",
+    "ProductDescription": "Bizning qo'ziqorin qaymoqli sho'rva - bu yumshoq qo'ziqorinlar, yangi sabzavotlar va qaymoqni oziga mujassam etadi. Quritilgan non bilan tortiladi.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "81.jpg"
+    },
+    "ProductCapacity": "450 ml.",
+    "ProductPrice": 40000.0,
+    "ProductIngredient": "piyoz, qo'ziqorin, sut, qaymoq, ziravorlar."
+  },
+  {
+    "ProductId": "84",
+    "ProductType": "Sho'rvalar",
+    "ProductName": "Tovuq Sho'rva",
+    "ProductDescription": "Tovuq sho'rva - tovuq bulyoni bilan tayyorlangan an'anaviy taomdir. U turli xil masaliqlar bilan hushboylik mujassam etadi. Quritilgan non bilan tortiladi.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "82.jpg"
+    },
+    "ProductCapacity": "450 ml.",
+    "ProductPrice": 25000.0,
+    "ProductIngredient": "Tovuq, tuxumli noodle, sabzi, piyoz, bedana tuxumi, ziravorlar."
+  },
+  {
+    "ProductId": "85",
+    "ProductType": "Yasmiq kremli sho'rva",
+    "ProductName": "Yasmiq kremli sho'rva",
+    "ProductDescription": "Yasmiq kremli sho'rva - shirali va mazali yasmiqdan tayyorlangan, xushbo'y va to'yimli taomdir. u quyuq korinishga ega bo'lib qaymoqli ta'mni o'ziga mujassam qiladi . Qutirilgan non bilan tortiladi.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "83.jpg"
+    },
+    "ProductCapacity": "450 ml.",
+    "ProductPrice": 25000.0,
+    "ProductIngredient": "piyoz, tomat pastasi, sabzi, yasmiq, qaymoq, ziravorlar."
+  },
+  {
+    "ProductId": "86",
+    "ProductType": "Sho'rvalar",
+    "ProductName": "Merjimek Ezo Gelin Chorbasi",
+    "ProductDescription": "Ezo Gelin Chorbasi - xuddi shu nom afsonaviy qahramon sharafiga nomlangan an'anaviy turk taomidir. Bu sho'rva turk oshxonasidagi eng taniqli va mashhur sho'rvalardan biridir. Ezo Gelin Chorbasi hushbo'y ta'm va yoqimli tuzilishga ega. Quritilgan non bilan tortiladi.",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "84.jpg"
+    },
+    "ProductCapacity": "450 ml.",
+    "ProductPrice": 25000.0,
+    "ProductIngredient": "yasmiq, sarimsoq, tomat pastasi, ziravorlar."
+  },
+  {
+    "ProductId": "87",
+    "ProductType": "Salatlar",
+    "ProductName": "Sezar salati",
+    "ProductDescription": "",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "85.jpg"
+    },
+    "ProductCapacity": "240 gr.",
+    "ProductPrice": 35000.0,
+    "ProductIngredient": "olcha pomidori, tovuq go'shti, aysberg karam, kruton, pishloq, mayonez-sarimsoq sousi, zaytun moyi."
+  },
+  {
+    "ProductId": "88",
+    "ProductType": "Salatlar",
+    "ProductName": "Muzhskoy kapriz",
+    "ProductDescription": "",
+    "Media": {
+      "Exist": true,
+      "ImageUrl": "86.jpg"
+    },
+    "ProductCapacity": "200 gr.",
+    "ProductPrice": 40000.0,
+    "ProductIngredient": "ikki xil qaynatilgan go'sht (ot go'shti va mol go'shti), dudlangan kurka, dudlangan kolbasa, mayonez, pishloq."
+  }
+]

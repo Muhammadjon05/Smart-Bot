@@ -1,0 +1,347 @@
+2024-01-08 09:42:45.956 +05:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='smart_bot' AND TABLE_NAME='__EFMigrationsHistory';
+2024-01-08 09:42:46.142 +05:00 [INF] Executed DbCommand (98ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `__EFMigrationsHistory` (
+    `MigrationId` varchar(150) CHARACTER SET utf8mb4 NOT NULL,
+    `ProductVersion` varchar(32) CHARACTER SET utf8mb4 NOT NULL,
+    CONSTRAINT `PK___EFMigrationsHistory` PRIMARY KEY (`MigrationId`)
+) CHARACTER SET=utf8mb4;
+2024-01-08 09:42:46.158 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='smart_bot' AND TABLE_NAME='__EFMigrationsHistory';
+2024-01-08 09:42:46.164 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2024-01-08 09:42:46.175 +05:00 [INF] Applying migration '20240108044228_1'.
+2024-01-08 09:42:46.250 +05:00 [INF] Executed DbCommand (39ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER DATABASE CHARACTER SET utf8mb4;
+2024-01-08 09:42:46.327 +05:00 [INF] Executed DbCommand (76ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `Orders` (
+    `OrderId` int NOT NULL AUTO_INCREMENT,
+    `UserId` int NOT NULL,
+    `OrderDate` datetime(6) NOT NULL,
+    CONSTRAINT `PK_Orders` PRIMARY KEY (`OrderId`)
+) CHARACTER SET=utf8mb4;
+2024-01-08 09:42:46.404 +05:00 [INF] Executed DbCommand (77ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `Users` (
+    `Id` int NOT NULL AUTO_INCREMENT,
+    `ChatId` bigint NOT NULL,
+    `Step` int NOT NULL,
+    `Name` longtext CHARACTER SET utf8mb4 NULL,
+    `Username` longtext CHARACTER SET utf8mb4 NULL,
+    `Phone` longtext CHARACTER SET utf8mb4 NULL,
+    `CreatedDate` datetime(6) NOT NULL,
+    `IsAdmin` tinyint(1) NULL,
+    `AdminChatId` bigint NULL,
+    `Location` longtext CHARACTER SET utf8mb4 NULL,
+    `Latitude` double NULL,
+    `Longitude` double NULL,
+    `NumberOfOrders` int NOT NULL,
+    `CartId` int NOT NULL,
+    CONSTRAINT `PK_Users` PRIMARY KEY (`Id`)
+) CHARACTER SET=utf8mb4;
+2024-01-08 09:42:46.510 +05:00 [INF] Executed DbCommand (106ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `OrderItems` (
+    `OrderItemId` int NOT NULL AUTO_INCREMENT,
+    `OrderId` int NOT NULL,
+    `ProductId` int NOT NULL,
+    `Quantity` int NOT NULL,
+    CONSTRAINT `PK_OrderItems` PRIMARY KEY (`OrderItemId`),
+    CONSTRAINT `FK_OrderItems_Orders_OrderId` FOREIGN KEY (`OrderId`) REFERENCES `Orders` (`OrderId`) ON DELETE CASCADE
+) CHARACTER SET=utf8mb4;
+2024-01-08 09:42:46.613 +05:00 [INF] Executed DbCommand (103ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `Carts` (
+    `CartId` int NOT NULL AUTO_INCREMENT,
+    `UserId` int NOT NULL,
+    `DateCreated` datetime(6) NOT NULL,
+    CONSTRAINT `PK_Carts` PRIMARY KEY (`CartId`),
+    CONSTRAINT `FK_Carts_Users_UserId` FOREIGN KEY (`UserId`) REFERENCES `Users` (`Id`) ON DELETE CASCADE
+) CHARACTER SET=utf8mb4;
+2024-01-08 09:42:46.713 +05:00 [INF] Executed DbCommand (100ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `CartItems` (
+    `CartItemId` int NOT NULL AUTO_INCREMENT,
+    `CartId` int NOT NULL,
+    `ProductId` int NOT NULL,
+    `Quantity` int NOT NULL,
+    CONSTRAINT `PK_CartItems` PRIMARY KEY (`CartItemId`),
+    CONSTRAINT `FK_CartItems_Carts_CartId` FOREIGN KEY (`CartId`) REFERENCES `Carts` (`CartId`) ON DELETE CASCADE
+) CHARACTER SET=utf8mb4;
+2024-01-08 09:42:46.804 +05:00 [INF] Executed DbCommand (90ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX `IX_CartItems_CartId` ON `CartItems` (`CartId`);
+2024-01-08 09:42:46.890 +05:00 [INF] Executed DbCommand (86ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX `IX_Carts_UserId` ON `Carts` (`UserId`);
+2024-01-08 09:42:46.960 +05:00 [INF] Executed DbCommand (69ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX `IX_OrderItems_OrderId` ON `OrderItems` (`OrderId`);
+2024-01-08 09:42:46.990 +05:00 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20240108044228_1', '7.0.14');
+2024-01-08 10:12:35.935 +05:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-01-08 10:12:35.975 +05:00 [INF] Now listening on: https://localhost:7250
+2024-01-08 10:12:35.976 +05:00 [INF] Now listening on: http://localhost:5018
+2024-01-08 10:12:35.977 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-08 10:12:35.977 +05:00 [INF] Hosting environment: Development
+2024-01-08 10:12:35.977 +05:00 [INF] Content root path: C:\Users\muham\RiderProjects\Smart-Bot\Smart-Web
+2024-01-08 10:12:39.188 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7250/swagger - -
+2024-01-08 10:12:39.204 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7250/swagger - - - 301 0 - 17.0048ms
+2024-01-08 10:12:39.212 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7250/swagger/index.html - -
+2024-01-08 10:12:39.274 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7250/swagger/index.html - - - 200 - text/html;charset=utf-8 62.0174ms
+2024-01-08 10:12:39.294 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7250/swagger/swagger-ui.css - -
+2024-01-08 10:12:39.299 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7250/swagger/swagger-ui-bundle.js - -
+2024-01-08 10:12:39.299 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7250/swagger/swagger-ui-standalone-preset.js - -
+2024-01-08 10:12:39.321 +05:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-01-08 10:12:39.321 +05:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-01-08 10:12:39.321 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7250/swagger/swagger-ui.css - - - 200 144929 text/css 26.8109ms
+2024-01-08 10:12:39.321 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7250/swagger/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 22.4328ms
+2024-01-08 10:12:39.322 +05:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-01-08 10:12:39.323 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7250/swagger/swagger-ui-bundle.js - - - 200 1061536 text/javascript 24.0698ms
+2024-01-08 10:12:39.355 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7250/swagger/swagger-ui-standalone-preset.js - -
+2024-01-08 10:12:39.357 +05:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-01-08 10:12:39.357 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7250/swagger/swagger-ui-bundle.js - -
+2024-01-08 10:12:39.357 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7250/swagger/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 2.4941ms
+2024-01-08 10:12:39.365 +05:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-01-08 10:12:39.365 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7250/swagger/swagger-ui-bundle.js - - - 200 1061536 text/javascript 7.8523ms
+2024-01-08 10:12:39.478 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7250/swagger/favicon-32x32.png - -
+2024-01-08 10:12:39.478 +05:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-01-08 10:12:39.478 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7250/swagger/favicon-32x32.png - - - 200 628 image/png 0.5479ms
+2024-01-08 10:12:39.516 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7250/swagger/v1/swagger.json - -
+2024-01-08 10:12:39.681 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7250/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 164.6123ms
+2024-01-08 10:13:17.722 +05:00 [INF] Request starting HTTP/1.1 GET https://72c8-84-54-75-249.ngrok-free.app/ - -
+2024-01-08 10:13:17.738 +05:00 [INF] Executing endpoint 'Smart_Bot.Controllers.BotController.GetMe (Smart-Web)'
+2024-01-08 10:13:17.747 +05:00 [INF] Route matched with {action = "GetMe", controller = "Bot"}. Executing controller action with signature System.String GetMe() on controller Smart_Bot.Controllers.BotController (Smart-Web).
+2024-01-08 10:13:17.750 +05:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2024-01-08 10:13:17.758 +05:00 [INF] Executed action Smart_Bot.Controllers.BotController.GetMe (Smart-Web) in 8.6659ms
+2024-01-08 10:13:17.759 +05:00 [INF] Executed endpoint 'Smart_Bot.Controllers.BotController.GetMe (Smart-Web)'
+2024-01-08 10:13:17.760 +05:00 [INF] HTTP GET / responded 200 in 36.1455 ms
+2024-01-08 10:13:17.761 +05:00 [INF] Request finished HTTP/1.1 GET https://72c8-84-54-75-249.ngrok-free.app/ - - - 200 - text/plain;+charset=utf-8 38.5326ms
+2024-01-08 10:13:17.961 +05:00 [INF] Request starting HTTP/1.1 GET https://72c8-84-54-75-249.ngrok-free.app/favicon.ico - -
+2024-01-08 10:13:17.962 +05:00 [INF] HTTP GET /favicon.ico responded 404 in 0.5663 ms
+2024-01-08 10:13:17.962 +05:00 [INF] Request finished HTTP/1.1 GET https://72c8-84-54-75-249.ngrok-free.app/favicon.ico - - - 404 0 - 1.2060ms
+2024-01-08 10:14:00.607 +05:00 [INF] Request starting HTTP/1.1 POST https://72c8-84-54-75-249.ngrok-free.app/ application/json 352
+2024-01-08 10:14:00.608 +05:00 [INF] Executing endpoint 'Smart_Bot.Controllers.BotController.Post (Smart-Web)'
+2024-01-08 10:14:00.630 +05:00 [INF] Route matched with {action = "Post", controller = "Bot"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Smart_Bot.Services.HandleUpdateService, Telegram.Bot.Types.Update) on controller Smart_Bot.Controllers.BotController (Smart-Web).
+2024-01-08 10:14:00.637 +05:00 [INF] Executed action Smart_Bot.Controllers.BotController.Post (Smart-Web) in 6.8298ms
+2024-01-08 10:14:00.637 +05:00 [INF] Executed endpoint 'Smart_Bot.Controllers.BotController.Post (Smart-Web)'
+2024-01-08 10:14:00.637 +05:00 [ERR] HTTP POST / responded 500 in 29.4137 ms
+System.InvalidOperationException: No service for type 'Smart_Bot.Services.HandleUpdateService' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinder.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-01-08 10:14:00.646 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'Smart_Bot.Services.HandleUpdateService' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinder.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-01-08 10:14:00.649 +05:00 [INF] Request finished HTTP/1.1 POST https://72c8-84-54-75-249.ngrok-free.app/ application/json 352 - 500 - text/plain;+charset=utf-8 41.2287ms
+2024-01-08 10:14:00.743 +05:00 [INF] Request starting HTTP/1.1 POST https://72c8-84-54-75-249.ngrok-free.app/ application/json 352
+2024-01-08 10:14:00.743 +05:00 [INF] Executing endpoint 'Smart_Bot.Controllers.BotController.Post (Smart-Web)'
+2024-01-08 10:14:00.743 +05:00 [INF] Route matched with {action = "Post", controller = "Bot"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Smart_Bot.Services.HandleUpdateService, Telegram.Bot.Types.Update) on controller Smart_Bot.Controllers.BotController (Smart-Web).
+2024-01-08 10:14:00.744 +05:00 [INF] Executed action Smart_Bot.Controllers.BotController.Post (Smart-Web) in 0.6704ms
+2024-01-08 10:14:00.744 +05:00 [INF] Executed endpoint 'Smart_Bot.Controllers.BotController.Post (Smart-Web)'
+2024-01-08 10:14:00.744 +05:00 [ERR] HTTP POST / responded 500 in 1.1409 ms
+System.InvalidOperationException: No service for type 'Smart_Bot.Services.HandleUpdateService' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinder.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-01-08 10:14:00.745 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'Smart_Bot.Services.HandleUpdateService' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinder.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-01-08 10:14:00.746 +05:00 [INF] Request finished HTTP/1.1 POST https://72c8-84-54-75-249.ngrok-free.app/ application/json 352 - 500 - text/plain;+charset=utf-8 2.7555ms
+2024-01-08 10:14:02.842 +05:00 [INF] Request starting HTTP/1.1 POST https://72c8-84-54-75-249.ngrok-free.app/ application/json 352
+2024-01-08 10:14:02.842 +05:00 [INF] Executing endpoint 'Smart_Bot.Controllers.BotController.Post (Smart-Web)'
+2024-01-08 10:14:02.842 +05:00 [INF] Route matched with {action = "Post", controller = "Bot"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Smart_Bot.Services.HandleUpdateService, Telegram.Bot.Types.Update) on controller Smart_Bot.Controllers.BotController (Smart-Web).
+2024-01-08 10:14:02.843 +05:00 [INF] Executed action Smart_Bot.Controllers.BotController.Post (Smart-Web) in 0.5394ms
+2024-01-08 10:14:02.843 +05:00 [INF] Executed endpoint 'Smart_Bot.Controllers.BotController.Post (Smart-Web)'
+2024-01-08 10:14:02.843 +05:00 [ERR] HTTP POST / responded 500 in 0.9684 ms
+System.InvalidOperationException: No service for type 'Smart_Bot.Services.HandleUpdateService' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinder.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-01-08 10:14:02.843 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'Smart_Bot.Services.HandleUpdateService' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinder.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-01-08 10:14:02.844 +05:00 [INF] Request finished HTTP/1.1 POST https://72c8-84-54-75-249.ngrok-free.app/ application/json 352 - 500 - text/plain;+charset=utf-8 2.6114ms
+2024-01-08 10:14:06.940 +05:00 [INF] Request starting HTTP/1.1 POST https://72c8-84-54-75-249.ngrok-free.app/ application/json 352
+2024-01-08 10:14:06.941 +05:00 [INF] Executing endpoint 'Smart_Bot.Controllers.BotController.Post (Smart-Web)'
+2024-01-08 10:14:06.941 +05:00 [INF] Route matched with {action = "Post", controller = "Bot"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Smart_Bot.Services.HandleUpdateService, Telegram.Bot.Types.Update) on controller Smart_Bot.Controllers.BotController (Smart-Web).
+2024-01-08 10:14:06.941 +05:00 [INF] Executed action Smart_Bot.Controllers.BotController.Post (Smart-Web) in 0.2798ms
+2024-01-08 10:14:06.941 +05:00 [INF] Executed endpoint 'Smart_Bot.Controllers.BotController.Post (Smart-Web)'
+2024-01-08 10:14:06.941 +05:00 [ERR] HTTP POST / responded 500 in 0.6736 ms
+System.InvalidOperationException: No service for type 'Smart_Bot.Services.HandleUpdateService' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinder.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-01-08 10:14:06.942 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'Smart_Bot.Services.HandleUpdateService' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinder.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-01-08 10:14:06.943 +05:00 [INF] Request finished HTTP/1.1 POST https://72c8-84-54-75-249.ngrok-free.app/ application/json 352 - 500 - text/plain;+charset=utf-8 2.5163ms
+2024-01-08 10:14:15.044 +05:00 [INF] Request starting HTTP/1.1 POST https://72c8-84-54-75-249.ngrok-free.app/ application/json 352
+2024-01-08 10:14:15.044 +05:00 [INF] Executing endpoint 'Smart_Bot.Controllers.BotController.Post (Smart-Web)'
+2024-01-08 10:14:15.044 +05:00 [INF] Route matched with {action = "Post", controller = "Bot"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Smart_Bot.Services.HandleUpdateService, Telegram.Bot.Types.Update) on controller Smart_Bot.Controllers.BotController (Smart-Web).
+2024-01-08 10:14:15.045 +05:00 [INF] Executed action Smart_Bot.Controllers.BotController.Post (Smart-Web) in 0.305ms
+2024-01-08 10:14:15.045 +05:00 [INF] Executed endpoint 'Smart_Bot.Controllers.BotController.Post (Smart-Web)'
+2024-01-08 10:14:15.045 +05:00 [ERR] HTTP POST / responded 500 in 0.6744 ms
+System.InvalidOperationException: No service for type 'Smart_Bot.Services.HandleUpdateService' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinder.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-01-08 10:14:15.045 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'Smart_Bot.Services.HandleUpdateService' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinder.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-01-08 10:14:15.046 +05:00 [INF] Request finished HTTP/1.1 POST https://72c8-84-54-75-249.ngrok-free.app/ application/json 352 - 500 - text/plain;+charset=utf-8 2.5836ms
+2024-01-08 10:14:31.148 +05:00 [INF] Request starting HTTP/1.1 POST https://72c8-84-54-75-249.ngrok-free.app/ application/json 352
+2024-01-08 10:14:31.149 +05:00 [INF] Executing endpoint 'Smart_Bot.Controllers.BotController.Post (Smart-Web)'
+2024-01-08 10:14:31.149 +05:00 [INF] Route matched with {action = "Post", controller = "Bot"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Smart_Bot.Services.HandleUpdateService, Telegram.Bot.Types.Update) on controller Smart_Bot.Controllers.BotController (Smart-Web).
+2024-01-08 10:14:31.149 +05:00 [INF] Executed action Smart_Bot.Controllers.BotController.Post (Smart-Web) in 0.2217ms
+2024-01-08 10:14:31.149 +05:00 [INF] Executed endpoint 'Smart_Bot.Controllers.BotController.Post (Smart-Web)'
+2024-01-08 10:14:31.149 +05:00 [ERR] HTTP POST / responded 500 in 0.5360 ms
+System.InvalidOperationException: No service for type 'Smart_Bot.Services.HandleUpdateService' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinder.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-01-08 10:14:31.150 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'Smart_Bot.Services.HandleUpdateService' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinder.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-01-08 10:14:31.150 +05:00 [INF] Request finished HTTP/1.1 POST https://72c8-84-54-75-249.ngrok-free.app/ application/json 352 - 500 - text/plain;+charset=utf-8 2.0003ms
+2024-01-08 10:14:53.909 +05:00 [INF] Application is shutting down...
